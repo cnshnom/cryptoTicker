@@ -31,7 +31,7 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 
 gem 'jbuilder'
-
+gem 'httparty'
 
 
 group :development, :test do

@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index
 
   get 'eth', to:'ticker#eth'
+  get 'btc', to:'ticker#btc'
 
 end
