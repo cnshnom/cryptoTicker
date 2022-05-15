@@ -1,5 +1,20 @@
 <h1> Hello Crypto </h1>
  <%= image_tag "btcImg.png" %>
 <div> Time Stamp: <%= raw(@status.to_json)  %></div>
-<div> BTC price(USD): <%= raw(@btcprice.to_json)  %></div>
-<div> ETH price(USD): <%= raw(@ethprice.to_json)  %></div>
+
+
+<table style="background-color:#D3D3D3;">
+<tr>
+<th>Token</th>
+<th>USD</th>
+<th>BTC</th>
+</tr>
+
+<% for i in 0..49 do%>
+<tr>
+<td><%= @dlistsymbol[i] %></td>
+<td><%= @dlistUSD[i].round(4) %></td>
+<td><%= @dlistBTC[i].round(4) %></td>
+</tr>
+<%end%>
+</table>
