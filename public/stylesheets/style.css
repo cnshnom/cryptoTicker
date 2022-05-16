@@ -1,0 +1,16 @@
+.center {
+  border: 5px ;
+  text-align: center;
+  }
+.timeStamp{
+  color: aquamarine;
+}
+
+body{
+  background-color: black;
+}
+
+th{
+  color: aquamarine;
+
+}

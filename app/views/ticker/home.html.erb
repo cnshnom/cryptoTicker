@@ -1,20 +1,43 @@
-<h1> Hello Crypto </h1>
- <%= image_tag "btcImg.png" %>
-<div> Time Stamp: <%= raw(@status.to_json)  %></div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <%= stylesheet_link_tag "style" %>
+    <title>Hello Crypto</title>
 
 
-<table style="background-color:#D3D3D3;">
-<tr>
-<th>Token</th>
-<th>USD</th>
-<th>BTC</th>
+  </head>
+
+<body>
+
+ <div class = "table-responsive">
+ <div class="center">
+ <%= image_tag "bitcoin.png", style: 'height:10vw;width:10vw;margin-bottom:20px;' %>
+<div class ="timeStamp"> Time Stamp: <%= raw(@status.to_json)  %></div>
+<div class ="timeStamp"> Top 50 Tokens Price Ticker</div>
+</div>
+
+<table class="table table-dark table-sm table align-middle">
+<tr class="">
+<th style="text-align:center">Token</th>
+<th style="text-align:center">USD</th>
+<th style="text-align:center">BTC</th>
 </tr>
 
 <% for i in 0..49 do%>
-<tr>
+<tr class="text-center">
 <td><%= @dlistsymbol[i] %></td>
 <td><%= @dlistUSD[i].round(4) %></td>
 <td><%= @dlistBTC[i].round(4) %></td>
 </tr>
 <%end%>
 </table>
+
+ </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
