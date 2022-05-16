@@ -19,7 +19,7 @@ class TickerController < ApplicationController
             @dlistsymbol = data["data"].map { |obj| obj["symbol"] }
             @dlistUSD = data["data"].map { |obj| obj["quote"]["USD"]["price"] }
             @dlistBTC = data["data"].map { |obj| obj["quote"]["USD"]["price"].to_d/(@btcprice)}
-            
+            @dlistETH = data["data"].map { |obj| obj["quote"]["USD"]["price"].to_d/(@ethprice)}
 
             @status = data["status"]["timestamp"]
             

@@ -3,7 +3,11 @@
   text-align: center;
   }
 .timeStamp{
-  color: aquamarine;
+  color: aqua;
+}
+.ticker{
+  font-size: 200%;
+  color: aqua;
 }
 
 body{
@@ -11,6 +15,11 @@ body{
 }
 
 th{
-  color: aquamarine;
+  color: aqua;
 
+}
+
+.gif-wrapper {
+  background-image: url("btcbling.gif");
+  background-repeat: no-repeat, repeat;
 }
