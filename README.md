@@ -1,24 +1,16 @@
-# README
+# Crypto Ticker
+## Description
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a demo of Crypto Ticker, using **rails 7 and CoinMarketCap API and Bootstrap**. 
+Top 50 Ranking crypto with current price in USD, BTC and ETH are clear at a glance.
 
-Things you may want to cover:
+## How to Install and Run the Project
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+After clone the cryptoTicker repository, in terminal can run: 
+```
+rails server
+```
+to run the app on 
+```
+localhost:3000
+```
